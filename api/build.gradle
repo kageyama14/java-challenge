@@ -2,7 +2,14 @@ plugins {
     id 'project-conventions'
 }
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.2.0'
+    implementation 'io.github.openfeign:feign-okhttp:12.5'
+    implementation 'io.github.openfeign:feign-httpclient:12.5'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

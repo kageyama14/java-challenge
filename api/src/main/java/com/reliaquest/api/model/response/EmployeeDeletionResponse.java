@@ -1,0 +1,13 @@
+package com.reliaquest.api.model.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode(callSuper = true)
+@Data
+public class EmployeeDeletionResponse extends BaseResponse {
+
+    @JsonProperty("data")
+    public boolean data;
+}
